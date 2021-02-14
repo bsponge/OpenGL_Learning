@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/js/cpp/opengl/src/../include
+C_INCLUDES = -I/home/js/cpp/OpenGL_Test/src/../include
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/js/cpp/opengl/src/../include
+CXX_INCLUDES = -I/home/js/cpp/OpenGL_Test/src/../include
 
 CXX_FLAGS = 
 

@@ -1,5 +1,5 @@
-/home/js/cpp/opengl/build/CMakeFiles/rebuild_cache.dir
-/home/js/cpp/opengl/build/CMakeFiles/edit_cache.dir
-/home/js/cpp/opengl/build/src/CMakeFiles/rebuild_cache.dir
-/home/js/cpp/opengl/build/src/CMakeFiles/edit_cache.dir
-/home/js/cpp/opengl/build/src/CMakeFiles/open_learning.dir
+/home/js/cpp/OpenGL_Test/build/CMakeFiles/rebuild_cache.dir
+/home/js/cpp/OpenGL_Test/build/CMakeFiles/edit_cache.dir
+/home/js/cpp/OpenGL_Test/build/src/CMakeFiles/edit_cache.dir
+/home/js/cpp/OpenGL_Test/build/src/CMakeFiles/rebuild_cache.dir
+/home/js/cpp/OpenGL_Test/build/src/CMakeFiles/OpenGL_Test.dir

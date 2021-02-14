@@ -1,4 +1,4 @@
-add_executable(${PROJECT_NAME} open_learning.cpp glad.c Shader.cpp)
+add_executable(${PROJECT_NAME} open_learning.cpp glad.c Shader.cpp stb_image.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ../include)
 target_link_directories(${PROJECT_NAME} PUBLIC ../include)

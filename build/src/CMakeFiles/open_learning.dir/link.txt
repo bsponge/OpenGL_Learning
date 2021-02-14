@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/open_learning.dir/open_learning.cpp.o CMakeFiles/open_learning.dir/glad.c.o CMakeFiles/open_learning.dir/Shader.cpp.o -o open_learning   -L/home/js/cpp/opengl/src/../include  -Wl,-rpath,/home/js/cpp/opengl/src/../include -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl -lm 

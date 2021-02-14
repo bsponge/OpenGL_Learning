@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/js/cpp/opengl
+CMAKE_SOURCE_DIR = /home/js/cpp/OpenGL_Test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/js/cpp/opengl/build
+CMAKE_BINARY_DIR = /home/js/cpp/OpenGL_Test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/opengl/build/CMakeFiles /home/js/cpp/opengl/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/OpenGL_Test/build/CMakeFiles /home/js/cpp/OpenGL_Test/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/opengl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/OpenGL_Test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named open_learning
+# Target rules for targets named OpenGL_Test
 
 # Build rule for target.
-open_learning: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 open_learning
-.PHONY : open_learning
+OpenGL_Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OpenGL_Test
+.PHONY : OpenGL_Test
 
 # fast build rule for target.
-open_learning/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/build
-.PHONY : open_learning/fast
+OpenGL_Test/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/build
+.PHONY : OpenGL_Test/fast
 
 # Help Target
 help:
@@ -150,7 +150,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... open_learning"
+	@echo "... OpenGL_Test"
 .PHONY : help
 
 

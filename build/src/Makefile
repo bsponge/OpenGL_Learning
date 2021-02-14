@@ -67,24 +67,13 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/js/cpp/opengl
+CMAKE_SOURCE_DIR = /home/js/cpp/OpenGL_Test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/js/cpp/opengl/build
+CMAKE_BINARY_DIR = /home/js/cpp/OpenGL_Test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -97,16 +86,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/js/cpp/opengl/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/opengl/build/CMakeFiles /home/js/cpp/opengl/build/src//CMakeFiles/progress.marks
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/opengl/build/CMakeFiles 0
+	cd /home/js/cpp/OpenGL_Test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/OpenGL_Test/build/CMakeFiles /home/js/cpp/OpenGL_Test/build/src//CMakeFiles/progress.marks
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/OpenGL_Test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,33 +116,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/js/cpp/opengl/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/js/cpp/OpenGL_Test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/open_learning.dir/rule:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/open_learning.dir/rule
-.PHONY : src/CMakeFiles/open_learning.dir/rule
+src/CMakeFiles/OpenGL_Test.dir/rule:
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/OpenGL_Test.dir/rule
+.PHONY : src/CMakeFiles/OpenGL_Test.dir/rule
 
 # Convenience name for target.
-open_learning: src/CMakeFiles/open_learning.dir/rule
+OpenGL_Test: src/CMakeFiles/OpenGL_Test.dir/rule
 
-.PHONY : open_learning
+.PHONY : OpenGL_Test
 
 # fast build rule for target.
-open_learning/fast:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/build
-.PHONY : open_learning/fast
+OpenGL_Test/fast:
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/build
+.PHONY : OpenGL_Test/fast
 
 Shader.o: Shader.cpp.o
 
@@ -150,7 +150,7 @@ Shader.o: Shader.cpp.o
 
 # target to build an object file
 Shader.cpp.o:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/Shader.cpp.o
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/Shader.cpp.o
 .PHONY : Shader.cpp.o
 
 Shader.i: Shader.cpp.i
@@ -159,7 +159,7 @@ Shader.i: Shader.cpp.i
 
 # target to preprocess a source file
 Shader.cpp.i:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/Shader.cpp.i
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/Shader.cpp.i
 .PHONY : Shader.cpp.i
 
 Shader.s: Shader.cpp.s
@@ -168,7 +168,7 @@ Shader.s: Shader.cpp.s
 
 # target to generate assembly for a file
 Shader.cpp.s:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/Shader.cpp.s
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/Shader.cpp.s
 .PHONY : Shader.cpp.s
 
 glad.o: glad.c.o
@@ -177,7 +177,7 @@ glad.o: glad.c.o
 
 # target to build an object file
 glad.c.o:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/glad.c.o
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/glad.c.o
 .PHONY : glad.c.o
 
 glad.i: glad.c.i
@@ -186,7 +186,7 @@ glad.i: glad.c.i
 
 # target to preprocess a source file
 glad.c.i:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/glad.c.i
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/glad.c.i
 .PHONY : glad.c.i
 
 glad.s: glad.c.s
@@ -195,7 +195,7 @@ glad.s: glad.c.s
 
 # target to generate assembly for a file
 glad.c.s:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/glad.c.s
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/glad.c.s
 .PHONY : glad.c.s
 
 open_learning.o: open_learning.cpp.o
@@ -204,7 +204,7 @@ open_learning.o: open_learning.cpp.o
 
 # target to build an object file
 open_learning.cpp.o:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/open_learning.cpp.o
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/open_learning.cpp.o
 .PHONY : open_learning.cpp.o
 
 open_learning.i: open_learning.cpp.i
@@ -213,7 +213,7 @@ open_learning.i: open_learning.cpp.i
 
 # target to preprocess a source file
 open_learning.cpp.i:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/open_learning.cpp.i
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/open_learning.cpp.i
 .PHONY : open_learning.cpp.i
 
 open_learning.s: open_learning.cpp.s
@@ -222,8 +222,35 @@ open_learning.s: open_learning.cpp.s
 
 # target to generate assembly for a file
 open_learning.cpp.s:
-	cd /home/js/cpp/opengl/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/open_learning.cpp.s
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/open_learning.cpp.s
 .PHONY : open_learning.cpp.s
+
+stb_image.o: stb_image.cpp.o
+
+.PHONY : stb_image.o
+
+# target to build an object file
+stb_image.cpp.o:
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/stb_image.cpp.o
+.PHONY : stb_image.cpp.o
+
+stb_image.i: stb_image.cpp.i
+
+.PHONY : stb_image.i
+
+# target to preprocess a source file
+stb_image.cpp.i:
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/stb_image.cpp.i
+.PHONY : stb_image.cpp.i
+
+stb_image.s: stb_image.cpp.s
+
+.PHONY : stb_image.s
+
+# target to generate assembly for a file
+stb_image.cpp.s:
+	cd /home/js/cpp/OpenGL_Test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/stb_image.cpp.s
+.PHONY : stb_image.cpp.s
 
 # Help Target
 help:
@@ -233,7 +260,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... open_learning"
+	@echo "... OpenGL_Test"
 	@echo "... Shader.o"
 	@echo "... Shader.i"
 	@echo "... Shader.s"
@@ -243,6 +270,9 @@ help:
 	@echo "... open_learning.o"
 	@echo "... open_learning.i"
 	@echo "... open_learning.s"
+	@echo "... stb_image.o"
+	@echo "... stb_image.i"
+	@echo "... stb_image.s"
 .PHONY : help
 
 
@@ -254,6 +284,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/js/cpp/opengl/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/js/cpp/OpenGL_Test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

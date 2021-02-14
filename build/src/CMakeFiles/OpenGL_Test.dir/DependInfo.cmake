@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/js/cpp/opengl/src/glad.c" "/home/js/cpp/opengl/build/src/CMakeFiles/open_learning.dir/glad.c.o"
+  "/home/js/cpp/OpenGL_Test/src/glad.c" "/home/js/cpp/OpenGL_Test/build/src/CMakeFiles/OpenGL_Test.dir/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,8 +14,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/js/cpp/opengl/src/Shader.cpp" "/home/js/cpp/opengl/build/src/CMakeFiles/open_learning.dir/Shader.cpp.o"
-  "/home/js/cpp/opengl/src/open_learning.cpp" "/home/js/cpp/opengl/build/src/CMakeFiles/open_learning.dir/open_learning.cpp.o"
+  "/home/js/cpp/OpenGL_Test/src/Shader.cpp" "/home/js/cpp/OpenGL_Test/build/src/CMakeFiles/OpenGL_Test.dir/Shader.cpp.o"
+  "/home/js/cpp/OpenGL_Test/src/open_learning.cpp" "/home/js/cpp/OpenGL_Test/build/src/CMakeFiles/OpenGL_Test.dir/open_learning.cpp.o"
+  "/home/js/cpp/OpenGL_Test/src/stb_image.cpp" "/home/js/cpp/OpenGL_Test/build/src/CMakeFiles/OpenGL_Test.dir/stb_image.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

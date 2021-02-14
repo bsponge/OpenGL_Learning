@@ -63,10 +63,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/js/cpp/opengl
+CMAKE_SOURCE_DIR = /home/js/cpp/OpenGL_Test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/js/cpp/opengl/build
+CMAKE_BINARY_DIR = /home/js/cpp/OpenGL_Test/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -90,7 +90,7 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/open_learning.dir/all
+src/all: src/CMakeFiles/OpenGL_Test.dir/all
 
 .PHONY : src/all
 
@@ -100,36 +100,36 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/open_learning.dir/clean
+src/clean: src/CMakeFiles/OpenGL_Test.dir/clean
 
 .PHONY : src/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/open_learning.dir
+# Target rules for target src/CMakeFiles/OpenGL_Test.dir
 
 # All Build rule for target.
-src/CMakeFiles/open_learning.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/js/cpp/opengl/build/CMakeFiles --progress-num=1,2,3,4 "Built target open_learning"
-.PHONY : src/CMakeFiles/open_learning.dir/all
+src/CMakeFiles/OpenGL_Test.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/js/cpp/OpenGL_Test/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target OpenGL_Test"
+.PHONY : src/CMakeFiles/OpenGL_Test.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/open_learning.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/opengl/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/open_learning.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/opengl/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/open_learning.dir/rule
+src/CMakeFiles/OpenGL_Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/OpenGL_Test/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/OpenGL_Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/cpp/OpenGL_Test/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/OpenGL_Test.dir/rule
 
 # Convenience name for target.
-open_learning: src/CMakeFiles/open_learning.dir/rule
+OpenGL_Test: src/CMakeFiles/OpenGL_Test.dir/rule
 
-.PHONY : open_learning
+.PHONY : OpenGL_Test
 
 # clean rule for target.
-src/CMakeFiles/open_learning.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/open_learning.dir/build.make src/CMakeFiles/open_learning.dir/clean
-.PHONY : src/CMakeFiles/open_learning.dir/clean
+src/CMakeFiles/OpenGL_Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL_Test.dir/build.make src/CMakeFiles/OpenGL_Test.dir/clean
+.PHONY : src/CMakeFiles/OpenGL_Test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

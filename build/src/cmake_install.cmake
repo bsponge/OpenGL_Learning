@@ -1,4 +1,4 @@
-# Install script for directory: /home/js/cpp/opengl/src
+# Install script for directory: /home/js/cpp/OpenGL_Test/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/OpenGL_Test.dir/open_learning.cpp.o CMakeFiles/OpenGL_Test.dir/glad.c.o CMakeFiles/OpenGL_Test.dir/Shader.cpp.o CMakeFiles/OpenGL_Test.dir/stb_image.cpp.o -o OpenGL_Test   -L/home/js/cpp/OpenGL_Test/src/../include  -Wl,-rpath,/home/js/cpp/OpenGL_Test/src/../include -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl -lm 
