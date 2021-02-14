@@ -1,0 +1,5 @@
+/home/js/cpp/opengl/build/CMakeFiles/rebuild_cache.dir
+/home/js/cpp/opengl/build/CMakeFiles/edit_cache.dir
+/home/js/cpp/opengl/build/src/CMakeFiles/rebuild_cache.dir
+/home/js/cpp/opengl/build/src/CMakeFiles/edit_cache.dir
+/home/js/cpp/opengl/build/src/CMakeFiles/open_learning.dir
