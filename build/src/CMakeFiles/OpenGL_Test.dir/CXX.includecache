@@ -821,6 +821,12 @@ detail/func_vector_relational.hpp
 ../include/shader/Shader.h
 glad/glad.h
 -
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
 string
 -
 fstream
